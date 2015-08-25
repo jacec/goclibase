@@ -31,7 +31,7 @@ func init() {
 				UI:                ui,
 			}, nil
 		},
-		"pipeline": func() (cli.Command, error) {
+		"subcommand": func() (cli.Command, error) {
 			return &command.PipelineCommand{
 				UI: ui,
 			}, nil
