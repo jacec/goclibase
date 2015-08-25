@@ -23,7 +23,7 @@ func (c *VersionCommand) Help() string {
 //Run runs the command
 func (c *VersionCommand) Run(_ []string) int {
 	var versionString bytes.Buffer
-	fmt.Fprintf(&versionString, "Jazz %s", c.Version)
+	fmt.Fprintf(&versionString, "goclibase %s", c.Version)
 	if c.VersionPrerelease != "" {
 		fmt.Fprintf(&versionString, ".%s", c.VersionPrerelease)
 

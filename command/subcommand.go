@@ -7,17 +7,17 @@ import (
 	"github.com/mitchellh/cli"
 )
 
-// PipelineCommand is a Command implementation for specifying the pipeline.
-type PipelineCommand struct {
+// SubCommand is a Command implementation for specifying the command...
+type SubCommand struct {
 	UI cli.Ui
 }
 
 //Help returns the help for the command
-func (c *PipelineCommand) Help() string {
+func (c *SubCommand) Help() string {
 	helpText := `
 Usage: [app name] [subcommand] [options]
 
-  A description of the application
+  A description of the [subcommand]
 
 Options:
 
@@ -27,7 +27,7 @@ Options:
 }
 
 //Run runs the command
-func (c *PipelineCommand) Run(args []string) int {
+func (c *SubCommand) Run(args []string) int {
 
 	var hclFile string
 	cmdFlags := flag.NewFlagSet("subcommand", flag.ContinueOnError)
@@ -37,11 +37,11 @@ func (c *PipelineCommand) Run(args []string) int {
 		return 1
 	}
 
-	//c.UI.Output(args[0])
+	c.UI.Output("Subcommand Complete")
 	return 0
 }
 
 //Synopsis resturns the synopsis for the command
-func (c *PipelineCommand) Synopsis() string {
+func (c *SubCommand) Synopsis() string {
 	return "Synopsis of [subcommand]"
 }

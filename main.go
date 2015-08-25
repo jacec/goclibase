@@ -42,10 +42,3 @@ func realMain() int {
 
 	return exitCode
 }
-func fooCommandFactory() {
-
-}
-
-func barCommandFactory() {
-
-}

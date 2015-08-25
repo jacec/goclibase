@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/jacec/jazz",
+	"ImportPath": "github.com/jacec/goclibase",
 	"GoVersion": "go1.4.2",
 	"Deps": [
 		{

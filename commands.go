@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/jacec/jazz/command"
+	"github.com/jacec/goclibase/command"
 	"github.com/mitchellh/cli"
 )
 
@@ -32,7 +32,7 @@ func init() {
 			}, nil
 		},
 		"subcommand": func() (cli.Command, error) {
-			return &command.PipelineCommand{
+			return &command.SubCommand{
 				UI: ui,
 			}, nil
 		},
