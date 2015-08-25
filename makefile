@@ -1,7 +1,7 @@
 default: clean build
 
 build: check
-	godep restore
+	$(GOPATH)/bin/godep restore
 	go build -o ./bin/goclibase
 
 clean:
