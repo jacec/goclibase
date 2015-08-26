@@ -31,7 +31,9 @@ build:
         name: run tests
         code: |
           sh ./tests.sh
-
+  # after steps for cleanup and notifications
   after-steps:
+      #send a slack notifcation based on the configured webhook URL
+      #if you're running this locally remember to set X_SLACK_URL
       - slack-notifier:
           url: $SLACK_URL
