@@ -1,5 +1,3 @@
-# goclibase
-
 #Go CLI Base Repo
 [![wercker status](https://app.wercker.com/status/a11ad24642f15ab726057506900c2a76/m "wercker status")](https://app.wercker.com/project/bykey/a11ad24642f15ab726057506900c2a76)
 
@@ -25,7 +23,7 @@ cd goclibase
 wercker dev
 ```
 
-##Building & Text Locally (with Wercker)
+##Building & Test Stages Locally (with Wercker)
 This assumes you have the wercker CLI installed and a reachable Docker instance
 ```
 git clone https://github.com/jacec/goclibase.git
