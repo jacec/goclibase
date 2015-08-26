@@ -31,3 +31,7 @@ build:
         name: run tests
         code: |
           sh ./tests.sh
+
+  after-steps:
+      - slack-notifier:
+          url: $SLACK_URL
