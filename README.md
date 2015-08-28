@@ -48,5 +48,3 @@ Managing go dependencies with this library
 
 Docker Machine (formally Boot2Docker) useful for local wercker CLI development
 [https://docs.docker.com/installation/mac/](https://docs.docker.com/installation/mac/)
-
-demo

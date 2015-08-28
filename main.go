@@ -13,6 +13,8 @@ func main() {
 
 func realMain() int {
 
+	var breakBuild string
+
 	// Get the command line args. We shortcut "--version" and "-v" to
 	// just show the version.
 	args := os.Args[1:]
